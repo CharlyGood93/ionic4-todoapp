@@ -1,5 +1,7 @@
 {
   "name": "ToDoAppTwo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

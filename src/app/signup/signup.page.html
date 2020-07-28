@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Create Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item class="vertical-space">
+    <h1 class="center">ToDoAppTwo</h1>
+  </ion-item>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="email" placeholder="Insert your email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input type="password" placeholder="Insert your password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="signup()" expand="block" shape="round" color="danger" class="create-acc-btn">
+    Create Account
+  </ion-button>
+  <ion-button (click)="goToLogin()" fill="clear" color="danger">
+    Already have an Account? Login Here
+  </ion-button>
+</ion-content>
